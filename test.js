@@ -50,14 +50,13 @@ let dog=new Dog('dog')
 console.log(animal.speak())
 
 
-document.getElementById("btn").addEventListener("click", function() {
-    const paragraph = document.getElementById("paragraph");
-    let newPar = document.createElement('p');
-    newPar.textContent = "'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.'";
-    paragraph.style.display = 'block'; 
-paragraph.style.color='black'
-    paragraph.appendChild(newPar);
-})
-
+function displayText() {
+    var text = document.getElementById("textField");
+    text.style.display = "block";
+  }
+  function hideText() {
+    var text = document.getElementById("textField");
+    text.style.display = "none";
+  }
 
       
